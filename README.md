@@ -30,6 +30,15 @@ This is the config of my personal desktop linux systems (not yet ready to switch
 - reboot
 - apply home-manager config # may be possible with nixos-enter in the live iso, but I didnt test that yet
 
+## Install MacOS
+>[!NOTE]
+> Instructions OSX
+- nix-shell -p git
+- git clone \<repo url>
+- create a host entry like [hosts/APM3LJDY9D2K7HC](hosts/APM3LJDY9D2K7HC/configuration.nix)
+- add the path to the host config to [flake.nix](flake.nix)
+- nixos-install --flake .#\<name>
+- reboot
 
 ### Thanks to
 - [maximbaz](https://github.com/maximbaz) arch config I studied extensively when I began to build my own configs
