@@ -1,0 +1,5 @@
+{ cfglib, ... }:
+
+{
+  imports = cfglib.nixModulesIn ./.;
+}

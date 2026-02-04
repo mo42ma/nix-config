@@ -1,0 +1,5 @@
+hosts/testbox/.terraform
+hosts/testbox/.terraform.lock.hcl
+hosts/testbox/terraform.tfstate*
+
+.gitconfig
