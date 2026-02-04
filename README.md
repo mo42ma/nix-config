@@ -44,4 +44,4 @@ This is the config of my personal desktop linux systems (not yet ready to switch
 ### Thanks to
 - [maximbaz](https://github.com/maximbaz) arch config I studied extensively when I began to build my own configs
 - [vimjoyer](https://github.com/vimjoyer/nixconf) and [librephoenix](https://github.com/librephoenix/nixos-config) for their nice youtube videos about nix and ofc the configs
-
+- [leoTlr](https://github.com/leoTlr/nix-config/blob/main/hosts/APM3LJDY9D2K7HC/home.nix)
