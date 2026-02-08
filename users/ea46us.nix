@@ -1,6 +1,6 @@
 _:
 rec {
-  userName = "ea46us";
+  userName = "EA46US";
   email = "placeholder";
   #gpg = {
   #  inherit email;

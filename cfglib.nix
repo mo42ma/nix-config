@@ -73,9 +73,9 @@ let
         cfglib.paths.nixosModules
         self.inputs.disko.nixosModules.default
         (cfglib.paths.hostConfigFile hostConfig)
-        self.inputs.sops-nix.nixosModules.default
+        # self.inputs.sops-nix.nixosModules.default
         cfglib.paths.systemProfiles
-        self.inputs.stylix.nixosModules.default
+        # self.inputs.stylix.nixosModules.default
       ]
       ++ optionalConfigFile (cfglib.paths.hardwareConfigFile hostConfig)
       ++ optionalConfigFile (cfglib.paths.diskConfigFile hostConfig)
@@ -98,8 +98,8 @@ let
         cfglib.paths.hmModules
         cfglib.paths.homeProfiles
         (cfglib.paths.homeConfigFile hostConfig)
-        self.inputs.sops-nix.homeManagerModules.sops
-        self.inputs.stylix.homeModules.default
+        # self.inputs.sops-nix.homeManagerModules.sops
+        # self.inputs.stylix.homeModules.default
         (_: { nixpkgs.overlays = [ self.outputs.overlays.default ]; })
       ];
     };

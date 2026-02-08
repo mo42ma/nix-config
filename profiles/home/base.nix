@@ -39,20 +39,20 @@ in
 
     homelib = {
 
-      fish.enable = lib.mkDefault true;
-      helix.enable = lib.mkDefault true;
-      atuin.enable = lib.mkDefault true;
+      # fish.enable = lib.mkDefault true;
+      # helix.enable = lib.mkDefault true;
+      # atuin.enable = lib.mkDefault true;
 
-      stylix = {
-        enable = true;
-        theme = "gruvbox-dark-medium";
-      };
+      # stylix = {
+      #   enable = true;
+      #   theme = "gruvbox-dark-medium";
+      # };
 
-      just = {
-        enable = true;
-        homeConfiguration = lib.mkDefault homeConfig;
-        hostConfiguration = lib.mkIf (cfg.sysConfigName != null) (lib.mkDefault cfg.sysConfigName);
-      };
+      # just = {
+      #   enable = true;
+      #   homeConfiguration = lib.mkDefault homeConfig;
+      #   hostConfiguration = lib.mkIf (cfg.sysConfigName != null) (lib.mkDefault cfg.sysConfigName);
+      # };
 
       git = {
         enable = true;

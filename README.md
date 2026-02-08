@@ -38,7 +38,9 @@ This is the config of my personal desktop linux systems (not yet ready to switch
 - create a host entry like [hosts/APM3LJDY9D2K7HC](hosts/APM3LJDY9D2K7HC/configuration.nix)
 - add the path to the host config to [flake.nix](flake.nix)
 - inside the cloned repo run 'nix profile add'
-- nixos-install --flake .#\<name>
+- home-manager switch -b backup --flake .#ea46us@APM3LY067FP9KK4
+- nix-install --flake .#\<name>
+
 - reboot
 
 ### Thanks to
