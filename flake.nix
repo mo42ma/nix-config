@@ -68,8 +68,8 @@
       homeConfigurations = with self.inputs; {
         # "leo@t14" = mkHome "x86_64-linux" "t14" "leo" home-manager-unstable;
         # "leo@tower" = mkHome "x86_64-linux" "tower" "leo" home-manager;
-        "ea46us@APM3LY067FP9KK4" = mkHome "aarch64-darwin" "APM3LY067FP9KK4" "EA46US" home-manager-unstable;
-        "ea46us@APM3LJDY9D2K7HC" = mkHome "aarch64-darwin" "APM3LJDY9D2K7HC" "EA46US" home-manager-unstable;
+        "ea46us@APM3LY067FP9KK4" = mkHome "aarch64-darwin" "APM3LY067FP9KK4" "ea46us" home-manager-unstable;
+        "ea46us@APM3LJDY9D2K7HC" = mkHome "aarch64-darwin" "APM3LJDY9D2K7HC" "ea46us" home-manager-unstable;
 
         # "deck@deck" = mkHome "x86_64-linux" "deck" "deck" home-manager;
       };
