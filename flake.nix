@@ -36,18 +36,6 @@
       url = "github:hraban/mac-app-util";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-
-    # # Declarative disk partitioning
-    # disko = {
-    #   url = "github:nix-community/disko/latest";
-    #   inputs.nixpkgs.follows = "nixpkgs";
-    # };
-
-    # # A Simple, multi-profile Nix-flake deploy tool.
-    # deploy-rs = {
-    #   url = "github:serokell/deploy-rs";
-    #   inputs.nixpkgs.follows = "nixpkgs";
-    # };
   };
 
   outputs = { self, ... }:
@@ -64,6 +52,12 @@
       #   sparrow = mkSystem "x86_64-linux" "sparrow" "leo" nixpkgs;
       #   h0 = mkSystem "x86_64-linux" "h0" "leo" nixpkgs;
       # };
+
+      # Build darwin flake using:
+      # $ darwin-rebuild build --flake .#APM3LY067FP9KK4
+      darwinConfigurations."APM3LY067FP9KK4" = nix-darwin.lib.darwinSystem {
+        modules = [ configuration ];
+      };
 
       homeConfigurations = with self.inputs; {
         # "leo@t14" = mkHome "x86_64-linux" "t14" "leo" home-manager-unstable;

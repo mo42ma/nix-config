@@ -20,7 +20,7 @@ in
 
       # trusted-users effectively have root rights because they can modify nix store however they want
       # doesnt really matter for @wheel users as they also have unlimited sudo rights
-      trusted-users = lib.mkIf cfg.remoteManaged [ "@wheel" ];
+      # trusted-users = lib.mkIf cfg.remoteManaged [ "@wheel" ];
     };
 
     gc = {
